@@ -3,24 +3,35 @@ public class Ejercicio08 {
 
 	public static void main(String[] args) {
 
-		byte edadEducacion = 5;
+		int nivel = 2;
 
-		// Procesamiento
+		switch (nivel) {
 
-		if (edadEducacion >= 0 && edadEducacion < 3) {
-			System.out.println("La persona no va al colegio");
-		} else if (edadEducacion >= 3 && edadEducacion <= 6) {
-			System.out.println("La persona va al kinder");
-		} else if (edadEducacion >= 7 && edadEducacion <= 12) {
-			System.out.println("La persona va a la Primaria");
-		} else if (edadEducacion >= 13 && edadEducacion <= 17) {
-			System.out.println("La persona va a la Secundaria");
-		} else if (edadEducacion > 17) {
-			System.out.println("La persona realiza estudios superiores");
-		} else {
-			System.out.println("Error: Edad no valida");
+		case 1:
+
+			System.out.println("Eres nivel Oro");
+
+			break;
+
+		case 2:
+
+			System.out.println("Eres nivel Plata");
+
+			break;
+
+		case 3:
+
+			System.out.println("Eres nivel Diamante");
+
+			break;
+
+		default:
+
+			System.out.println("Eres nivel Basico");
+
+			break;
+
 		}
 
 	}
-
 }

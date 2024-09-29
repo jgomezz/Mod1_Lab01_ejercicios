@@ -3,15 +3,28 @@ public class Ejercicio14_Array {
 
 	public static void main(String[] args) {
 
-//		int numeros[] = new int[10];
-//	
-//		numeros[0] = 12;
+		int numeros[] = new int[10];
+
+		// Inicializo
+		for (int i = 0; i < numeros.length; i++) {
+			numeros[i] = -1;
+		}
 		
-		int numeros[] = {12,0,0,0,0,0,0,0,0,0};
+		// Asigno 3, 6, ....
+		for (int i = 0 , valor = 3 ; i < numeros.length; i++ , valor +=3) {
+			numeros[i] = valor;
+		}
 		
-		System.out.println(numeros);
+		// Suma total
+		int suma = 0;
+		for (int i = 0; i < numeros.length; i++) {
+			
+			suma += numeros[i];
+		}
 		
-		System.out.println(numeros[0]);
+		System.out.println(suma);
+		
+
 		
 	}
 }
